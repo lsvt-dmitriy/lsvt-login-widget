@@ -102,6 +102,19 @@
         box-shadow: none;
         transition: border 0.2s, box-shadow 0.2s;
     }
+
+    &.in-field-icon {
+        input {
+            padding-left: 2.5em;
+        }
+
+        i.icon {
+            position: absolute;
+            left: 0.75em;
+            top: 1em;
+            z-index: 1;
+        }
+    }
 }
 
 .error {
@@ -115,6 +128,12 @@
             &:before,
             &:after {
                 border-color: var(--sf_color_danger, $danger);
+            }
+        }
+
+        &.in-field-icon {
+            i.icon {
+                color: var(--sf_color_danger, $danger);
             }
         }
     }
