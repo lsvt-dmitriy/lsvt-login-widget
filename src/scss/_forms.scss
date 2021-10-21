@@ -26,12 +26,13 @@
         }
         width: 100%;
         background-color: $white;
+        transition: border 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
     }
 
     &.form__group--hidden-label {
         input {
             border-top: solid 1px;
-            border-top-color: $gray-400;
+            border-top-color: var(--sf_color_default, $default);
         }
         .form__label {
             display: none;
@@ -45,6 +46,10 @@
         z-index: 1;
         color: var(--sf_color_default, $default);
         white-space: nowrap;
+        &:before,
+        &:after {
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
         transition: color 0.2s, font-size 0.2s, line-height 0.2s;
     }
 
@@ -53,6 +58,23 @@
         input[type="text"],
         input[type="password"],
         input[type="email"] {
+            &:focus {
+                border-color: var(--sf_color_black, $black);
+                border-top-color: rgba(0, 0, 0, 0);
+                & + .form__label {
+                    color: var(--sf_color_black, $black);
+                    &:before,
+                    &:after {
+                        border-color: var(--sf_color_black, $black);
+                    }
+                    & + i {
+                        color: var(--sf_color_black, $black);
+                        & + span > i {
+                            color: var(--sf_color_black, $black);
+                        }
+                    }
+                }
+            }
             border-top-color: rgba(0, 0, 0, 0);
         }
 
@@ -95,7 +117,6 @@
                 content: "";
                 border-top: solid 1px;
                 border-top-color: $gray-400;
-                transition: border-color 0.2s, box-shadow 0.2s;
             }
         }
     }
