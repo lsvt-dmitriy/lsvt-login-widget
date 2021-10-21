@@ -15,10 +15,7 @@
 // ** Namespaced styles
 // ---------------------------------------------
 
-#lslf__login-form {
-    // NOTE: hide before all the stuff loaded
-    display: none;
-
+#lslf__login-widget {
     @import "_app-globals";
 
     @import "_wrapper";
