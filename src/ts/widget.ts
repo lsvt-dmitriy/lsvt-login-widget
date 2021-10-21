@@ -1,3 +1,6 @@
+// Init Navigation
+import SlideNavigation from "./slide-navigation";
+
 /**
  * Ensures widget works
  *
@@ -17,6 +20,6 @@ export default class Widget {
         if (!this.container) {
             throw new Error(`${containerId} element not found.`);
         }
-        this.container.style.display = "block";
+        new SlideNavigation(this.container);
     }
 }
