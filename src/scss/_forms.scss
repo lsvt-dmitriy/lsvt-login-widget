@@ -104,15 +104,30 @@
     }
 
     &.in-field-icon {
-        input {
-            padding-left: 2.5em;
+        &.in-field-icon--prepend {
+            input {
+                padding-left: 2.5em;
+            }
         }
 
-        i.icon {
+        &.in-field-icon--append {
+            input {
+                padding-right: 2.5em;
+            }
+        }
+
+        i.in-field-icon__icon {
             position: absolute;
-            left: 0.75em;
-            top: 1em;
             z-index: 1;
+            top: 1em;
+        }
+
+        i.in-field-icon__icon--start {
+            left: 0.75em;
+        }
+
+        i.in-field-icon__icon--end {
+            right: 0.75em;
         }
     }
 }
@@ -132,7 +147,7 @@
         }
 
         &.in-field-icon {
-            i.icon {
+            i.in-field-icon__icon {
                 color: var(--sf_color_danger, $danger);
             }
         }

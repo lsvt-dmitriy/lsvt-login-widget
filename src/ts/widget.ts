@@ -1,5 +1,5 @@
-// Init Navigation
 import SlideNavigation from "./slide-navigation";
+import PasswordToggle from "./password-toggle";
 
 /**
  * Ensures widget works
@@ -21,5 +21,12 @@ export default class Widget {
             throw new Error(`${containerId} element not found.`);
         }
         new SlideNavigation(this.container);
+    }
+
+    public addPasswordToggle(passwordFieldSelector: string) {
+        const passwordField = this.container.querySelector(
+            passwordFieldSelector
+        );
+        new PasswordToggle(passwordField as HTMLInputElement);
     }
 }

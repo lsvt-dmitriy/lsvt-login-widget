@@ -10,7 +10,7 @@
         >
             <% include ./partials/alert-error.ejs %>
 
-            <div class="form__group in-field-icon">
+            <div class="form__group in-field-icon in-field-icon--prepend">
                 <input
                     type="text"
                     name="lslf__field_user-name"
@@ -18,7 +18,7 @@
                     class="form__control"
                     required
                 />
-                <i class="icon icon-nav-my-account text-muted"></i>
+                <i class="in-field-icon__icon in-field-icon__icon--start icon-nav-my-account text-muted"></i>
                 <label
                     class="form__label"
                     for="lslf__field_user-name"
@@ -26,7 +26,7 @@
                     >Username
                 </label>
             </div>
-            <div class="form__group in-field-icon">
+            <div class="form__group in-field-icon in-field-icon--prepend in-field-icon--append">
                 <input
                     type="password"
                     name="lslf__field_password"
@@ -34,7 +34,11 @@
                     class="form__control"
                     required
                 />
-                <i class="icon icon-utils-lock text-muted"></i>
+                <i class="in-field-icon__icon in-field-icon__icon--start icon-utils-lock text-muted"></i>
+                <span>
+                    <i class="in-field-icon__icon in-field-icon__icon--end icon-nav-watchdogs text-muted password-toggle password-toggle--show"></i>
+                    <i class="in-field-icon__icon in-field-icon__icon--end icon-utils-hide text-muted password-toggle password-toggle--hide hidden"></i>
+                </span>
                 <label class="form__label" for="lslf__field_password"
                     >Password</label
                 >

@@ -1,7 +1,7 @@
 {
-  "name": "lsvt-stripe-widget",
+  "name": "lsvt-login-form",
   "version": "1.0.0",
-  "description": "Embeddable LSVT Stripe Widget",
+  "description": "LSVT Login Form Widget",
   "main": "index.ts",
   "scripts": {
     "serve:webpack": "webpack serve --mode development --stats-children",

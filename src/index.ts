@@ -5,3 +5,4 @@ import Widget from "./ts/widget";
 
 // Init the Widget
 const widget = new Widget("lslf__login-widget");
+widget.addPasswordToggle("#lslf__field_password");
