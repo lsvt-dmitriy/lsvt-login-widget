@@ -1,5 +1,6 @@
 import SlideNavigation from "./slide-navigation";
 import PasswordToggle from "./password-toggle";
+import ActivateInputsOnFocus from "./activate-inputs-on-focus";
 
 /**
  * Ensures widget works
@@ -21,6 +22,7 @@ export default class Widget {
             throw new Error(`${containerId} element not found.`);
         }
         new SlideNavigation(this.container);
+        new ActivateInputsOnFocus(this.container);
     }
 
     public addPasswordToggle(passwordFieldSelector: string) {
