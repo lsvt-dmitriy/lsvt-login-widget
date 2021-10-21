@@ -1,0 +1,279 @@
+/* ============================================= *\
+    Selectors for all the widget elements 
+\* ============================================= */
+
+/* --------------------------------------------- *\
+  Terms and Conditions
+\* --------------------------------------------- */
+
+/* Container */
+#sf_tos {
+}
+
+/* Close button */
+#sf_tos__close {
+}
+
+/* Close button label */
+#sf_tos_btn_close_label {
+}
+
+/* The content */
+#sf_tos_content {
+}
+
+/* --------------------------------------------- *\
+  Step 1
+\* --------------------------------------------- */
+
+/* Slide wrapper */
+#sf_step-1 {
+}
+
+/* Step title */
+#sf_step-1_page_title {
+}
+
+/* Step subtitle */
+#sf_step-1_page_subtitle {
+}
+
+/* Form */
+#sf_form_step-1 {
+}
+
+/* Continue button */
+#sf_step-1_btn_continue {
+}
+
+/* --------------------------------------------- *\
+  Step 2a - Sign Up Form
+\* --------------------------------------------- */
+
+/* Wrapper */
+#sf_step-2a {
+}
+
+/* Back button */
+#sf_step-2a_btn_back_label {
+}
+
+/* Sign In - button label */
+#sf_step-2a_btn_sign-in_title {
+}
+
+/* Sign In - button label */
+#sf_step-2a_btn_sign-in_label {
+}
+
+/* Sign Up form */
+#sf_form_step-2a {
+}
+
+/* Full Name - Field */
+#sf_step-2a_field_full-name {
+}
+
+/* Full Name - Label */
+#sf_step-2a_field_full-name_label {
+}
+
+/* Email - field */
+#sf_step-2a_field_email {
+}
+
+/* Email - label */
+#sf_step-2a_field_email_label {
+}
+
+/* Phone - field */
+#sf_step-2a_field_phone {
+}
+
+/* Phone - label */
+#sf_step-2a_field_phone_label {
+}
+
+/* Continue button */
+#sf_step-2a_btn_continue {
+}
+
+/* --------------------------------------------- *\
+// Step 2b - Sign In form
+\* --------------------------------------------- */
+
+/* Wrapper */
+#sf_step-2b {
+}
+
+/* Back button */
+#sf_step-2b_btn_back_label {
+}
+
+/* Form */
+#sf_form_step-2b {
+}
+
+/* Username field */
+#sf_step-2b_field_username {
+}
+
+/* Password field */
+#sf_step-2b_field_password {
+}
+
+/* Sign In button title */
+#sf_step-2a_btn_sign-in_title {
+}
+
+/* Sign In button label */
+#sf_step-2a_btn_sign-in_label {
+}
+
+/* Enroll button title */
+#sf_step-2b_btn_enroll_title {
+}
+
+/* Enroll button label */
+#sf_step-2b_btn_enroll_label {
+}
+
+/* --------------------------------------------- *\
+  Step 3
+\* --------------------------------------------- */
+
+/* Wrapper */
+#sf_form_step-3 {
+}
+
+/* Step title */
+#sf_step-3_page_title {
+}
+
+/* Step subtitle */
+#sf_step-3_page_subtitle {
+}
+
+/* Form */
+#sf_form_step-3 {
+}
+
+/* Back button */
+#sf_step-3_btn_back_label {
+}
+
+/* Credit card title */
+#sf_step-3_credit-card_title {
+}
+
+/* Continue button */
+#sf_step-3_btn_continue {
+}
+
+/* --------------------------------------------- *\
+  Step 4
+\* --------------------------------------------- */
+
+/* Wrapper */
+#sf_form_step-4 {
+}
+
+/* Step title */
+#sf_step-4_page_title {
+}
+
+/* Step subtitle */
+#sf_step-4_page_subtitle {
+}
+
+/* Form */
+#sf_form_step-4 {
+}
+
+/* Company Name - Field */
+#sf_step-4_company-name {
+}
+
+/* Company Name - Label */
+#sf_step-4_company-name_label {
+}
+
+/* Street Address 1 - Field */
+#sf_step-4_address-1 {
+}
+
+/* Street Address 1 - Label */
+#sf_step-4_address-1_label {
+}
+
+/* Street Address 2 - Field */
+#sf_step-4_address-2 {
+}
+
+/* Street Address 2 - Label */
+#sf_step-4_address-2_label {
+}
+
+/* City - Field */
+#sf_step-4_city {
+}
+
+/* City - Label */
+#sf_step-4_city_label {
+}
+
+/* State - Field */
+#sf_step-4_state {
+}
+
+/* State - Label */
+#sf_step-4_state_label {
+}
+
+/* Zip - Field */
+#sf_step-4_zip {
+}
+
+/* Zip - Label */
+#sf_step-4_zip_label {
+}
+
+/* Finish button */
+#sf_step-4_btn_continue {
+}
+
+/* --------------------------------------------- *\
+  Messages
+\* --------------------------------------------- */
+
+#sf_success_alert {
+}
+
+#sf_success_alert_message {
+}
+
+#sf_error_alert {
+}
+
+#sf_error_alert_message {
+}
+
+/* --------------------------------------------- *\
+  Modal
+\* --------------------------------------------- */
+
+/* Wrapper */
+#sf_modal {
+}
+
+/* Title */
+#sf_modal_title {
+}
+
+/* Close button */
+#sf_modal_btn_close {
+}
+
+/* Continue button */
+#sf_modal_btn_continue {
+}

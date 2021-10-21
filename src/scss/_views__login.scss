@@ -1,0 +1,28 @@
+// ---------------------------------------------
+// || Views - Login
+// ---------------------------------------------
+
+#lslf__v_login {
+    .form__group:nth-child(2) {
+        margin-top: 0;
+    }
+
+    & > label {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        input[type="radio"] {
+            min-width: 1em;
+            position: relative;
+            margin-right: $card-padding;
+            margin-left: 0;
+        }
+    }
+
+    form:not(.error) {
+        .alert.alert-danger {
+            display: none;
+        }
+    }
+}

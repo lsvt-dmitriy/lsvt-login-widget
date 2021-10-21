@@ -1,0 +1,60 @@
+<!-- Login Page -->
+<div class="slide" id="lslf__v_login">
+    <section class="content">
+        <!-- prettier-ignore -->
+        <form 
+            id="lslf__form_login" 
+            action="/" 
+            method="get" 
+            class="error"
+        >
+            <% include ./partials/alert-error.ejs %>
+
+            <div class="form__group">
+                <input
+                    type="text"
+                    name="lslf__field_user-name"
+                    id="lslf__field_user-name"
+                    class="form__control"
+                    required
+                />
+                <label
+                    class="form__label"
+                    for="lslf__field_user-name"
+                    id="lslf__field_user-name_label"
+                    >Username
+                </label>
+            </div>
+            <div class="form__group">
+                <input
+                    type="password"
+                    name="lslf__field_password"
+                    id="lslf__field_password"
+                    class="form__control"
+                    required
+                />
+                <label class="form__label" for="lslf__field_password"
+                    >Password</label
+                >
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-2">
+                Sign In
+            </button>
+        </form>
+    </section>
+    <footer>
+        <small>
+            <a
+                href="#"
+                class="slide-switcher"
+                data-go-to="lslf__v_forgot-password"
+            >
+                Forgot Password
+            </a>
+            or
+            <a href="#" class="slide-switcher" data-go-to="lslf__v_need-help">
+                Need Help?
+            </a>
+        </small>
+    </footer>
+</div>

@@ -1,0 +1,18 @@
+/* --------------------------------------------- *\
+    Widget Colors CSS Variables
+\* --------------------------------------------- */
+
+:root {
+    --sf_color_white: #fff;
+    --sf_color_black: #000;
+    --sf_color_primary: #12355a;
+    --sf_color_default: #899aac;
+    --sf_color_gray: #8c8c8c;
+    --sf_color_success: #8bc34a;
+    --sf_color_danger: #d22814;
+    --sf_color_info: #03a9f4;
+    --sf_color_gray-light: #f9f9f9;
+    --sf_color_gray-350: #dfdfdf;
+    --sf_color_gray-400: #c5c5c5;
+    --sf_color_blue-light: rgb(243, 250, 254);
+}

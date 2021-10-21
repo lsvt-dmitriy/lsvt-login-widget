@@ -1,0 +1,29 @@
+// ---------------------------------------------
+// || Widget Wrapper
+// ---------------------------------------------
+
+& {
+    width: $default-widget-width;
+    height: auto;
+    overflow: hidden;
+    background-color: var(--sf_color_white, $white);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: $radius;
+    position: relative;
+}
+
+& > main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+& > footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

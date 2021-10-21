@@ -1,0 +1,107 @@
+// ---------------------------------------------
+// || App Globals
+// ---------------------------------------------
+
+&,
+input {
+    font-family: "Roboto Slab", serif;
+}
+
+small {
+    font-size: 12px;
+
+    i {
+        font-size: 0.85em;
+    }
+}
+
+%headings {
+    font-family: "Montserrat", sans-serif;
+    color: var(--sf_color_primary, $primary);
+}
+
+.btn {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    letter-spacing: 0.38px;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 0.75em;
+    padding: 1.25em 1.525em;
+    box-sizing: border-box;
+    box-shadow: none;
+    cursor: pointer;
+
+    & * {
+        cursor: pointer;
+    }
+
+    &.disabled,
+    &.disabled:hover {
+        opacity: 0.75;
+        pointer-events: none;
+    }
+}
+
+.btn-primary {
+    color: var(--sf_color_white, $white);
+    background: var(--sf_color_primary, $primary);
+    border-color: var(--sf_color_primary, $primary);
+    &:hover {
+        opacity: 0.95;
+    }
+}
+
+.btn-grey {
+    @extend .btn-primary;
+    color: var(--sf_color_primary, $primary);
+    background: var(--sf_color_gray-light, $gray-light);
+    border-color: var(--sf_color_gray-light, $gray-light);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    color: var(--sf_color_gray-400, $gray-400);
+    background-color: var(--sf_color_gray-400, $gray-400);
+    margin: 0.5em 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert {
+    $padding: 1em;
+    padding: $padding;
+    width: calc(100% - $padding * 2 / 0.75);
+    font-size: 0.75rem;
+    border-radius: $radius;
+
+    &-danger {
+        color: #fff;
+        background-color: var(--sf_color_danger, $danger);
+        border-color: var(--sf_color_danger, $danger);
+    }
+
+    &-success {
+        color: #fff;
+        background-color: var(--sf_color_success, $success);
+        border-color: var(--sf_color_success, $success);
+    }
+
+    i {
+        margin-right: 1em;
+    }
+}
+
+a {
+    font-weight: bold;
+    color: var(--sf_color_black, $black);
+}

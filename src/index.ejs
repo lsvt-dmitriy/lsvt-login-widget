@@ -1,0 +1,36 @@
+<!-- src/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LSVT Login Form Continer</title>
+        <style>
+            /* These styles are only for demo */
+            body {
+                background: #555;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="cleanslate.css" inline />
+        <link rel="stylesheet" href="styles.css" inline />
+        <link rel="stylesheet" href="colors.css" inline />
+        <link rel="stylesheet" href="custom.css" inline />
+        <link rel="stylesheet" href="text-content.css" inline />
+
+        <script type="module">
+            import defaultExport from "./login-form.js";
+            if (defaultExport) {
+                new defaultExport("loginForm");
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- LSVT Login Widget Markup-->
+        <% include ./app.ejs %>
+        <!-- /LSVT Login Widget Markup-->
+    </body>
+</html>

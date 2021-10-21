@@ -1,0 +1,121 @@
+// ---------------------------------------------
+// || Forms
+// ---------------------------------------------
+
+.form__group {
+    $field-padding: 1em;
+
+    position: relative;
+    display: block;
+    padding-top: 0.375rem;
+    margin: 1em auto 0.5em;
+    line-height: 1.5;
+
+    input,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        border-radius: $radius;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 0.9em;
+        padding: 0.75em 0.875em;
+        &::placeholder {
+            letter-spacing: 0.02em;
+            opacity: 0.7;
+        }
+        width: 100%;
+        background-color: $white;
+        border-top: none;
+    }
+
+    &.form__group--hidden-label {
+        input {
+            border-top: solid 1px;
+            border-top-color: $gray-400;
+        }
+        .form__label {
+            display: none;
+        }
+    }
+
+    .form__label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        z-index: 1;
+        display: inline-flex;
+        width: 100%;
+        max-height: 100%;
+        font-weight: 400;
+        font-size: 0.75rem;
+        box-sizing: border-box;
+        line-height: 1em;
+        color: var(--sf_color_default, $default);
+
+        &:before {
+            margin-right: 0.25rem;
+            border-left: solid 1px transparent;
+            border-radius: 0.25rem 0;
+        }
+
+        &:after {
+            flex-grow: 1;
+            margin-left: 0.25rem;
+            border-right: solid 1px transparent;
+            border-radius: 0 0.25rem;
+        }
+
+        &:before,
+        &:after {
+            display: block;
+            min-width: 0.625rem;
+            height: 0.5rem;
+            margin-top: 0.375rem;
+            pointer-events: none;
+            content: "";
+            border-top: solid 1px;
+            border-top-color: $gray-400;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+    }
+
+    .form__control {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: inherit;
+        right: 0;
+        padding: 0.875em 0.75em;
+        margin: 0;
+        font-size: inherit;
+        font-family: inherit;
+        line-height: inherit;
+        background-color: transparent;
+        border-color: $gray-400;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: $radius;
+        box-shadow: none;
+        transition: border 0.2s, box-shadow 0.2s;
+    }
+}
+
+.error {
+    .form__group {
+        color: var(--sf_color_danger, $danger);
+        input {
+            border-color: var(--sf_color_danger, $danger);
+        }
+        .form__label {
+            color: var(--sf_color_danger, $danger);
+            &:before,
+            &:after {
+                border-color: var(--sf_color_danger, $danger);
+            }
+        }
+    }
+}

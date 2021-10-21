@@ -1,0 +1,23 @@
+// ---------------------------------------------
+// || SCSS mixins and variables
+// ---------------------------------------------
+
+// Variables
+$spacer: 1em;
+$radius: 0.375em;
+$card-padding: 10px;
+$default-widget-width: 340px;
+
+// Mixins
+@mixin subtle-border($lighten: 0%) {
+    border: 1px solid lighten(#d6d6d6, $lighten);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %headings !optional;
+}

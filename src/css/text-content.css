@@ -1,0 +1,115 @@
+/* ============================================= *\
+    Text contents for dynamic properties
+\* ============================================= */
+
+:root {
+    /* --------------------------------------------- *\
+        Common
+    \* --------------------------------------------- */
+
+    /* Terms and Conditions link at the widget bottom */
+    --sf_btn_tos-open: "Terms and Conditions*";
+
+    /* --------------------------------------------- *\
+        Step 1
+    \* --------------------------------------------- */
+
+    /* Page Title */
+    --sf_step-1_page_title: "Let's Get Started*";
+
+    /* Page Subtitle */
+    --sf_step-1_page_subtitle: "Select a plan*";
+
+    /* Badge */
+    --sf_step-1_plan_badge: "Best Value*";
+
+    /* Continue to Step 2 button */
+    --sf_step-1_btn_continue: "Continue*";
+
+    /* --------------------------------------------- *\
+        Step 2a
+    \* --------------------------------------------- */
+
+    /* Page Title */
+    --sf_step-2_page_title: "Create Your Account*";
+
+    /* Page Subtitle */
+    --sf_step-2_page_subtitle: "or Sign-In Below*";
+
+    /* Back Button */
+    --sf_step-2a_btn_back_label: "Edit Plan Selection*";
+
+    /* Sign-In button title */
+    --sf_step-2a_btn_sign-in_title: "Already have an account?*";
+
+    /* Sign-In button label */
+    --sf_step-2a_btn_sign-in_label: "Sign In*";
+
+    /* Continue to Step 3 button */
+    --sf_step-2a_btn_continue: "Continue*";
+
+    /* --------------------------------------------- *\
+        Step 2b - Sign In
+    \* --------------------------------------------- */
+
+    /* Back Button */
+    --sf_step-2b_btn_back_label: "Edit Plan Selection*";
+
+    /* Sign-In button label */
+    --sf_step-2b_btn_sign-in: "Sign-In*";
+
+    /* Enroll button title */
+    --sf_step-2b_btn_enroll_title: "Don't have an account?*";
+
+    /* Enroll button label */
+    --sf_step-2b_btn_enroll_label: "Enroll*";
+
+    /* --------------------------------------------- *\
+        Step 3
+    \* --------------------------------------------- */
+
+    /* Page Title */
+    --sf_step-3_page_title: "Your Information*";
+
+    /* Page Subtitle */
+    --sf_step-3_page_subtitle: "Billing Details*";
+
+    /* Back Button */
+    --sf_step-3_btn_back_label: "Edit Profile Details*";
+
+    /* "Credit Card" Title */
+    --sf_step-3_credit-card_title: "Credit Card*";
+
+    /* Continue to Step 4 button */
+    --sf_step-3_btn_continue: "Continue*";
+
+    /* --------------------------------------------- *\
+        Step 4
+    \* --------------------------------------------- */
+
+    /* Page Title */
+    --sf_step-4_page_title: "Your Information*";
+
+    /* Page Subtitle */
+    --sf_step-4_page_subtitle: "Account Details*";
+
+    /* Complete button */
+    --sf_step-4_btn_continue: "Submit Form*";
+
+    /* --------------------------------------------- *\
+        Modal
+    \* --------------------------------------------- */
+
+    /* Modal Title */
+    --sf_modal_title: "Short Success Headline*";
+
+    /* Continue Button */
+    --sf_modal_btn_continue: "Continue*";
+
+    /* --------------------------------------------- *\
+        Terms and Conditions
+    \* --------------------------------------------- */
+
+    /* Continue Button */
+    --sf_tos_btn_close_label: "Close*";
+}
