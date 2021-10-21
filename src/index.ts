@@ -4,9 +4,13 @@ import "./css/colors.css";
 import "./css/custom.css";
 import "./css/text-content.css";
 import SlideNavigation from "./ts/slide-navigation";
+import Widget from "./ts/widget";
+
+// Init the Widget
+const widget = new Widget("lslf__login-form");
 
 // Init Navigation
-new SlideNavigation("lslf__login-form");
+new SlideNavigation(widget.container);
 
 // Init AJAX form
 /* 

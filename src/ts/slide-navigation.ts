@@ -8,16 +8,15 @@ export default class SlideNavigation {
     widget: HTMLElement;
 
     /**
-     * Creates an instance of StripeWidget.
-     * @param {string} containerId id of the HTML element enclosing the widget
-     * @memberof containerId
+     * Adds dynamic navigation to HTML element children.
+     * @param {HTMLElement} widget
+     * @memberof SlideNavigation
      */
-    constructor(containerId: string) {
-        console.log("constructor");
-        this.widget = document.getElementById(containerId);
-        if (!this.widget) {
-            throw new Error(`${containerId} element not found.`);
+    constructor(widget: HTMLElement) {
+        if (!widget) {
+            throw new Error("Cannot add navigation to non-existent element");
         }
+        this.widget = widget;
         this.attachNavButtons();
     }
 
@@ -45,7 +44,7 @@ export default class SlideNavigation {
      * "Continue" and "Back", to navigate between the slides.
      *
      * @private
-     * @memberof StripeWidget
+     * @memberof SlideNavigation
      */
     private attachNavButtons() {
         const buttons = Array.from(

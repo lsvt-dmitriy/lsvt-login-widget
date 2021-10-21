@@ -16,6 +16,9 @@
 // ---------------------------------------------
 
 #lslf__login-form {
+    // NOTE: hide before all the stuff loaded
+    display: none;
+
     @import "_app-globals";
 
     @import "_wrapper";
