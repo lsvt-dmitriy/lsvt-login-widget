@@ -17,7 +17,7 @@ small {
 
 %headings {
     font-family: "Montserrat", sans-serif;
-    color: var(--sf_color_primary, $primary);
+    color: var(--lslf_color_primary, $primary);
 }
 
 .btn {
@@ -48,9 +48,9 @@ small {
 }
 
 .btn-primary {
-    color: var(--sf_color_white, $white);
-    background: var(--sf_color_primary, $primary);
-    border-color: var(--sf_color_primary, $primary);
+    color: var(--lslf_color_white, $white);
+    background: var(--lslf_color_primary, $primary);
+    border-color: var(--lslf_color_primary, $primary);
     &:hover {
         opacity: 0.95;
     }
@@ -58,9 +58,9 @@ small {
 
 .btn-grey {
     @extend .btn-primary;
-    color: var(--sf_color_primary, $primary);
-    background: var(--sf_color_gray-light, $gray-light);
-    border-color: var(--sf_color_gray-light, $gray-light);
+    color: var(--lslf_color_primary, $primary);
+    background: var(--lslf_color_gray-light, $gray-light);
+    border-color: var(--lslf_color_gray-light, $gray-light);
 }
 
 *,
@@ -72,8 +72,8 @@ hr {
     border: none;
     height: 1px;
     width: 100%;
-    color: var(--sf_color_gray-400, $gray-400);
-    background-color: var(--sf_color_gray-400, $gray-400);
+    color: var(--lslf_color_gray-400, $gray-400);
+    background-color: var(--lslf_color_gray-400, $gray-400);
     margin: 0.5em 0;
 }
 
@@ -90,14 +90,14 @@ hr {
 
     &-danger {
         color: #fff;
-        background-color: var(--sf_color_danger, $danger);
-        border-color: var(--sf_color_danger, $danger);
+        background-color: var(--lslf_color_danger, $danger);
+        border-color: var(--lslf_color_danger, $danger);
     }
 
     &-success {
         color: #fff;
-        background-color: var(--sf_color_success, $success);
-        border-color: var(--sf_color_success, $success);
+        background-color: var(--lslf_color_success, $success);
+        border-color: var(--lslf_color_success, $success);
     }
 
     i {
@@ -107,5 +107,5 @@ hr {
 
 a {
     font-weight: bold;
-    color: var(--sf_color_black, $black);
+    color: var(--lslf_color_black, $black);
 }

@@ -32,7 +32,7 @@
     &.form__group--hidden-label {
         input {
             border-top: solid 1px;
-            border-top-color: var(--sf_color_default, $default);
+            border-top-color: var(--lslf_color_default, $default);
         }
         .form__label {
             display: none;
@@ -44,7 +44,7 @@
         left: 2.5em;
         top: 1em;
         z-index: 1;
-        color: var(--sf_color_default, $default);
+        color: var(--lslf_color_default, $default);
         white-space: nowrap;
         &:before,
         &:after {
@@ -59,18 +59,18 @@
         input[type="password"],
         input[type="email"] {
             &:focus {
-                border-color: var(--sf_color_black, $black);
+                border-color: var(--lslf_color_black, $black);
                 border-top-color: rgba(0, 0, 0, 0);
                 & + .form__label {
-                    color: var(--sf_color_black, $black);
+                    color: var(--lslf_color_black, $black);
                     &:before,
                     &:after {
-                        border-color: var(--sf_color_black, $black);
+                        border-color: var(--lslf_color_black, $black);
                     }
                     & + i {
-                        color: var(--sf_color_black, $black);
+                        color: var(--lslf_color_black, $black);
                         & + span > i {
-                            color: var(--sf_color_black, $black);
+                            color: var(--lslf_color_black, $black);
                         }
                     }
                 }
@@ -92,7 +92,7 @@
             font-size: 0.75rem;
             box-sizing: border-box;
             line-height: 1em;
-            color: var(--sf_color_default, $default);
+            color: var(--lslf_color_default, $default);
 
             &:before {
                 margin-right: 0.25rem;
@@ -172,21 +172,21 @@
 
 .error {
     .form__group {
-        color: var(--sf_color_danger, $danger);
+        color: var(--lslf_color_danger, $danger);
         input {
-            border-color: var(--sf_color_danger, $danger);
+            border-color: var(--lslf_color_danger, $danger);
         }
         .form__label {
-            color: var(--sf_color_danger, $danger);
+            color: var(--lslf_color_danger, $danger);
             &:before,
             &:after {
-                border-color: var(--sf_color_danger, $danger);
+                border-color: var(--lslf_color_danger, $danger);
             }
         }
 
         &.in-field-icon {
             i.in-field-icon__icon {
-                color: var(--sf_color_danger, $danger);
+                color: var(--lslf_color_danger, $danger);
             }
         }
     }
