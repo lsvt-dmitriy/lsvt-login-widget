@@ -66,8 +66,6 @@ const ts = function() {
         .pipe(dest('dist'))
 }
 
-
-
 // Bundle into one app
 const runServer = function() {
     return src('dist')

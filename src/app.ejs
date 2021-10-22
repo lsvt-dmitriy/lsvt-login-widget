@@ -1,7 +1,9 @@
 <div id="lslf__login-widget" class="cleanslate" style="display: none">
-    <main>
+    <!-- Add class "loading" to show spinner -->
+    <main class="loading_">
         <!-- Including all the "pages" here -->
         <!-- prettier-ignore -->
+        <% include ./views/partials/loader-spinner.ejs %>
         <% include ./views/login.ejs %>
         <% include ./views/forgot-password.ejs %>
         <% include ./views/need-help.ejs %>

@@ -8,9 +8,7 @@ export default class ActivateInputsOnFocus {
     container: HTMLElement;
 
     /**
-     * Creates instance of a class
-     * @param {HTMLElement} container
-     * @memberof ActivateInputsOnFocus
+     * @param container
      */
     constructor(container: HTMLElement) {
         if (!container) {
@@ -28,6 +26,11 @@ export default class ActivateInputsOnFocus {
         });
     }
 
+    /**
+     * @param input
+     * @param isActive
+     * @returns undefined
+     */
     private setInputFormGroupState(input: HTMLElement, isActive: boolean) {
         const activeClass = "form__group--active";
         const group = input.closest(".form__group");
