@@ -17,12 +17,12 @@
 
 /* Username Input - Label */
 #lslf__field_user-name_label::after {
-    content: var(--lslf__field_user-name_label, attr(data-content));
+    // content: var(--lslf__field_user-name_label, attr(data-content));
 }
 
 /* Password Input - Label */
 #lslf__field_password_label::after {
-    content: var(--lslf__field_password_label, attr(data-content));
+    // content: var(--lslf__field_password_label, attr(data-content));
 }
 
 /* Sign-In Button Text Label */
@@ -51,7 +51,7 @@
 
 /* Email Input - Label */
 #lslf__field_email_label::after {
-    content: var(--lslf__field_email_label, attr(data-content));
+    // content: var(--lslf__field_email_label, attr(data-content));
 }
 
 /* Submit Button Text Label */
