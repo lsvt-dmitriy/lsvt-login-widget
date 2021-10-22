@@ -6,7 +6,7 @@
   "scripts": {
     "serve:webpack": "webpack serve --mode development --stats-children",
     "build:webpack": "webpack --mode production",
-    "build:gulp": "gulp build",
+    "serve:gulp": "gulp build",
     "dev": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

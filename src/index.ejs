@@ -21,10 +21,25 @@
         <link rel="stylesheet" href="text-content.css" inline />
 
         <script type="module">
-            import defaultExport from "./login-form.js";
-            if (defaultExport) {
-                new defaultExport("loginForm");
-            }
+            /* 
+                This script is here to make the grunt build work
+                The right way of building this app should be via webpack
+                The grunt has been added to avoid packing everything
+                in one bundle as webpack does, because webservices
+                want to manually work with compiled files, so to
+                keep them separate and readable we use grunt instead
+                of the webpack 
+            */
+            import { default as PasswordToggle } from "./password-toggle.js";
+            import { default as SlideNavigation } from "./slide-navigation.js";
+            import { default as ActivateInputsOnFocus } from "./activate-inputs-on-focus.js";
+            // Init the Widget
+            const widget = document.querySelector("#lslf__login-widget");
+            new SlideNavigation(widget);
+            new ActivateInputsOnFocus(widget);
+
+            const passwordField = widget.querySelector("#lslf__field_password");
+            new PasswordToggle(passwordField);
         </script>
     </head>
 

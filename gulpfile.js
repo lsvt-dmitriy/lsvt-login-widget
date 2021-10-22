@@ -34,8 +34,6 @@ const ejsApp = function() {
      .pipe(beautify.html({ indent_size: 4 }))
      .pipe(dest('dist'))
  }
- 
-
 
 // Compile SASS
 const scss = function() {

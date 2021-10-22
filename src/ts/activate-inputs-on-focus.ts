@@ -20,11 +20,9 @@ export default class ActivateInputsOnFocus {
         const inputs = Array.from(container.querySelectorAll("input"));
         inputs.forEach((input) => {
             input.addEventListener("focus", () => {
-                console.log("focus");
                 this.setInputFormGroupState(input, true);
             });
             input.addEventListener("blur", () => {
-                console.log("blur");
                 this.setInputFormGroupState(input, false);
             });
         });
@@ -34,13 +32,10 @@ export default class ActivateInputsOnFocus {
         const activeClass = "form__group--active";
         const group = input.closest(".form__group");
         if (!group) return console.warn("Form group not found");
-
         if (isActive) {
             group.classList.add(activeClass);
         }
-
         const inputValue = (input as HTMLInputElement).value;
-
         if (!isActive && !inputValue) {
             group.classList.remove(activeClass);
         }
