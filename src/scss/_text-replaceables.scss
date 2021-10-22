@@ -49,6 +49,11 @@
     content: var(--lslf__forgot-password_msg, attr(data-content));
 }
 
+/* Password Sent Confirmation Message */
+#lslf__success_message::after {
+    content: var(--lslf__succsess_message, attr(data-content));
+}
+
 /* Email Input - Label */
 #lslf__field_email_label::after {
     content: var(--lslf__field_email_label, attr(data-content));

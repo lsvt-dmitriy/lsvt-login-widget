@@ -36,6 +36,9 @@
     /* Message */
     --lslf__forgot-password_msg: "No worries, we all forget passwords sometimes. Enter your email address below and we'll send instructions on how to reset it*";
 
+    /* Password Sent Confirmation Message */
+    --lslf__succsess_message: "Password Reset request has been sent. Check your email soon.*";
+
     /* Email Input - Label */
     --lslf__field_email_label: "Email Address*";
 
