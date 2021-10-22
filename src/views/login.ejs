@@ -22,8 +22,8 @@
                     class="form__label"
                     for="lslf__field_user-name"
                     id="lslf__field_user-name_label"
+                    data-content="Username"
                 >
-                    Username
                 </label>
                 <i class="in-field-icon__icon in-field-icon__icon--start icon-nav-my-account text-muted"></i>
 
@@ -40,8 +40,8 @@
                     class="form__label" 
                     for="lslf__field_password" 
                     id="lslf__field_password_label"
+                    data-content="Password"
                 >
-                    Password
                 </label>
                 <i class="in-field-icon__icon in-field-icon__icon--start icon-utils-lock text-muted"></i>
                 <span>
@@ -51,8 +51,7 @@
 
             </div>
             <button type="submit" class="btn btn-primary w-100 mt-2" id="lslf__btn_sign-in">
-                <span id="lslf__btn_sign-in_label">
-                    Sign In
+                <span id="lslf__btn_sign-in_label" class="label" data-content="Sign In">
                 </span>
             </button>
         </form>
@@ -65,18 +64,26 @@
                 data-go-to="lslf__v_forgot-password"
                 id="lslf__login_btn_forgot-password"
             >
-                <span id="lslf__login_btn_forgot-password_label">
-                    Forgot Password
+                <span
+                    id="lslf__login_btn_forgot-password_label"
+                    class="label"
+                    data-content="Forgot Password"
+                >
                 </span>
             </a>
-            or
+            &nbsp;or&nbsp;
             <a
                 href="#"
                 class="slide-switcher"
                 data-go-to="lslf__v_need-help"
                 id="lslf__login_btn_need-help"
             >
-                <span id="lslf__login_btn_need-help_label"> Need Help? </span>
+                <span
+                    id="lslf__login_btn_need-help_label"
+                    class="label"
+                    data-content="Need Help?"
+                >
+                </span>
             </a>
         </small>
     </footer>

@@ -2,16 +2,17 @@
 <div class="hidden slide" id="lslf__v_need-help">
     <section class="content text-center mb-3">
         <h4 class="text-system-black">
-            <span id="lslf__need-help_headline"> %%Custom Headline%% </span>
+            <span
+                id="lslf__need-help_headline"
+                data-content="%%Custom Headline%%"
+            ></span>
         </h4>
         <p>
             <small>
-                <div id="lslf__need-help_message">
-                    %%Custom message configured in WebServices can be long or
-                    short and supports rich text like
-                    <strong>bold fonts</strong> and <a href="#">web links</a> to
-                    external sites.%%
-                </div>
+                <span
+                    id="lslf__need-help_message"
+                    data-content="%%Custom message configured in WebServices can be long or short and, but CSS text replaceable will not supports rich text like bold fonts and web links to external sites.%%*"
+                ></span>
             </small>
         </p>
         <button
@@ -19,7 +20,12 @@
             class="btn btn-primary w-100 mt-2"
             id="lslf__need-help_btn_custom-cta"
         >
-            <span id="lslf__need-help_btn_custom-cta_label"> Custom CTA </span>
+            <span
+                id="lslf__need-help_btn_custom-cta_label"
+                class="label"
+                data-content="Custom CTA"
+            >
+            </span>
         </button>
         <button
             type="button"
@@ -28,8 +34,11 @@
             id="lslf__need-help_btn_back"
         >
             <small>
-                <span id="lslf__need-help_btn_back_label">
-                    Return to Sign-In
+                <span
+                    id="lslf__need-help_btn_back_label"
+                    class="label"
+                    data-content="Return to Sign In"
+                >
                 </span>
             </small>
         </button>

@@ -1,0 +1,66 @@
+/* ============================================= *\
+    Text contents for dynamic properties
+\* ============================================= */
+
+:root {
+    /* --------------------------------------------- *\
+    Widget
+    \* --------------------------------------------- */
+
+    /* Error Message */
+    --lslf__error_message: "Username or Password are not recognized. Please try again or contact support at 1-800-439-5788.*";
+
+    /* --------------------------------------------- *\
+    "Login" Page
+    \* --------------------------------------------- */
+
+    /* Username Input - Label */
+    --lslf__field_user-name_label: "Username*";
+
+    /* Password Input - Label */
+    --lslf__field_password_label: "Password*";
+
+    /* Sign-In Button Text Label */
+    --lslf__btn_sign-in_label: "Sign In*";
+
+    /* Forgot Password Link Label */
+    --lslf__login_btn_forgot-password_label: "*Forgot Password";
+
+    /* Need Help Link Label */
+    --lslf__login_btn_need-help_label: "*Need Help?";
+
+    /* --------------------------------------------- *\
+    "Forgot Password" Page
+    \* --------------------------------------------- */
+
+    /* Message */
+    --lslf__forgot-password_msg: "No worries, we all forget passwords sometimes. Enter your email address below and we'll send instructions on how to reset it*";
+
+    /* Email Input - Label */
+    --lslf__field_email_label: "Email Address*";
+
+    /* Submit Button Text Label */
+    --lslf__btn_submit-forgot-password_label: "Submit*";
+
+    /* Return to Sign-In Link Label */
+    --lslf__forgot-password_btn_back_label: "Return to Sign In*";
+
+    /* Need Help Link Label */
+    --lslf__forgot-password_btn_need-help_label: "*Need Help?";
+
+    /* --------------------------------------------- *\
+    "Need Help" Page
+    \* --------------------------------------------- */
+
+    /* Custom Headline */
+    --lslf__need-help_headline: "%%Custom Headline%%*";
+
+    /* Custom Message */
+    --lslf__need-help_message: "%%Custom message configured in WebServices can be long or short and, but CSS text replaceable will not supports rich text like bold fonts and web links to external sites.%%*";
+
+    /* Return to Sign-In Link Label */
+    --lslf__need-help_btn_back_label: "Return to Sign In*";
+
+    /* Custom CTA Button Text Label */
+    --lslf__need-help_btn_custom-cta_label: "Custom CTA*";
+}

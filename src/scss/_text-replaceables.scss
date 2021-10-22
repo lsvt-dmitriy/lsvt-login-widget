@@ -1,0 +1,97 @@
+/* ============================================= *\ 
+  *** Selectors for all the widget elements ***
+\* ============================================= */
+
+/* --------------------------------------------- *\
+  Widget
+\* --------------------------------------------- */
+
+/* Error Message */
+#lslf__error_message::after {
+    content: var(--lslf__error_message, attr(data-content));
+}
+
+/* --------------------------------------------- *\
+  "Login" Page
+\* --------------------------------------------- */
+
+/* Username Input - Label */
+#lslf__field_user-name_label::after {
+    content: var(--lslf__field_user-name_label, attr(data-content));
+}
+
+/* Password Input - Label */
+#lslf__field_password_label::after {
+    content: var(--lslf__field_password_label, attr(data-content));
+}
+
+/* Sign-In Button Text Label */
+#lslf__btn_sign-in_label::after {
+    content: var(--lslf__btn_sign-in_label, attr(data-content));
+}
+
+/* Forgot Password Link Label */
+#lslf__login_btn_forgot-password_label::after {
+    content: var(--lslf__login_btn_forgot-password_label, attr(data-content));
+}
+
+/* Need Help Link Label */
+#lslf__login_btn_need-help_label::after {
+    content: var(--lslf__login_btn_need-help_label, attr(data-content));
+}
+
+/* --------------------------------------------- *\
+  "Forgot Password" Page
+\* --------------------------------------------- */
+
+/* Message */
+#lslf__forgot-password_msg::after {
+    content: var(--lslf__forgot-password_msg, attr(data-content));
+}
+
+/* Email Input - Label */
+#lslf__field_email_label::after {
+    content: var(--lslf__field_email_label, attr(data-content));
+}
+
+/* Submit Button Text Label */
+#lslf__btn_submit-forgot-password_label::after {
+    content: var(--lslf__btn_submit-forgot-password_label, attr(data-content));
+}
+
+/* Return to Sign-In Link Label */
+#lslf__forgot-password_btn_back_label::after {
+    content: var(--lslf__forgot-password_btn_back_label, attr(data-content));
+}
+
+/* Need Help Link Label */
+#lslf__forgot-password_btn_need-help_label::after {
+    content: var(
+        --lslf__forgot-password_btn_need-help_label,
+        attr(data-content)
+    );
+}
+
+/* --------------------------------------------- *\
+  "Need Help" Page
+\* --------------------------------------------- */
+
+/* Custom Headline */
+#lslf__need-help_headline::after {
+    content: var(--lslf__need-help_headline, attr(data-content));
+}
+
+/* Custom Message */
+#lslf__need-help_message::after {
+    content: var(--lslf__need-help_message, attr(data-content));
+}
+
+/* Return to Sign-In Link Label */
+#lslf__need-help_btn_back_label::after {
+    content: var(--lslf__need-help_btn_back_label, attr(data-content));
+}
+
+/* Custom CTA Button Text Label */
+#lslf__need-help_btn_custom-cta_label::after {
+    content: var(--lslf__need-help_btn_custom-cta_label, attr(data-content));
+}
