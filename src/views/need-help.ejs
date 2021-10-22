@@ -1,23 +1,37 @@
 <!-- Need Help Page-->
 <div class="hidden slide" id="lslf__v_need-help">
     <section class="content text-center mb-3">
-        <h4 class="text-system-black">%%Custom Headline%%</h4>
+        <h4 class="text-system-black">
+            <span id="lslf__need-help_headline"> %%Custom Headline%% </span>
+        </h4>
         <p>
             <small>
-                %%Custom message configured in WebServices can be long or short
-                and supports rich text like <strong>bold fonts</strong> and
-                <a href="#">web links</a> to external sites.%%
+                <div id="lslf__need-help_message">
+                    %%Custom message configured in WebServices can be long or
+                    short and supports rich text like
+                    <strong>bold fonts</strong> and <a href="#">web links</a> to
+                    external sites.%%
+                </div>
             </small>
         </p>
-        <button type="button" class="btn btn-primary w-100 mt-2">
-            Custom CTA
+        <button
+            type="button"
+            class="btn btn-primary w-100 mt-2"
+            id="lslf__need-help_btn_custom-cta"
+        >
+            <span id="lslf__need-help_btn_custom-cta_label"> Custom CTA </span>
         </button>
         <button
             type="button"
             class="btn link text-primary slide-switcher text-center mt-4"
             data-go-to="lslf__v_login"
+            id="lslf__need-help_btn_back"
         >
-            <small>Return to Sign-In</small>
+            <small>
+                <span id="lslf__need-help_btn_back_label">
+                    Return to Sign-In
+                </span>
+            </small>
         </button>
     </section>
 </div>

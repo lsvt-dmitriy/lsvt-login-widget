@@ -22,7 +22,8 @@
                     class="form__label"
                     for="lslf__field_user-name"
                     id="lslf__field_user-name_label"
-                    >Username
+                >
+                    Username
                 </label>
                 <i class="in-field-icon__icon in-field-icon__icon--start icon-nav-my-account text-muted"></i>
 
@@ -35,9 +36,13 @@
                     class="form__control"
                     required
                 />
-                <label class="form__label" for="lslf__field_password"
-                    >Password</label
+                <label 
+                    class="form__label" 
+                    for="lslf__field_password" 
+                    id="lslf__field_password_label"
                 >
+                    Password
+                </label>
                 <i class="in-field-icon__icon in-field-icon__icon--start icon-utils-lock text-muted"></i>
                 <span>
                     <i class="in-field-icon__icon in-field-icon__icon--end icon-nav-watchdogs text-muted password-toggle password-toggle--show"></i>
@@ -45,8 +50,10 @@
                 </span>
 
             </div>
-            <button type="submit" class="btn btn-primary w-100 mt-2">
-                Sign In
+            <button type="submit" class="btn btn-primary w-100 mt-2" id="lslf__btn_sign-in">
+                <span id="lslf__btn_sign-in_label">
+                    Sign In
+                </span>
             </button>
         </form>
     </section>
@@ -56,12 +63,20 @@
                 href="#"
                 class="slide-switcher"
                 data-go-to="lslf__v_forgot-password"
+                id="lslf__login_btn_forgot-password"
             >
-                Forgot Password
+                <span id="lslf__login_btn_forgot-password_label">
+                    Forgot Password
+                </span>
             </a>
             or
-            <a href="#" class="slide-switcher" data-go-to="lslf__v_need-help">
-                Need Help?
+            <a
+                href="#"
+                class="slide-switcher"
+                data-go-to="lslf__v_need-help"
+                id="lslf__login_btn_need-help"
+            >
+                <span id="lslf__login_btn_need-help_label"> Need Help? </span>
             </a>
         </small>
     </footer>
