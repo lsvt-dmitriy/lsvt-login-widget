@@ -1,0 +1,147 @@
+/* ============================================= *\ 
+  *** Selectors for all the widget elements ***
+\* ============================================= */
+
+/* --------------------------------------------- *\
+  Widget
+\* --------------------------------------------- */
+
+/* Wrapper */
+#lslf__login-widget {
+}
+
+/* Error Message */
+#lslf__error_message {
+}
+
+/* --------------------------------------------- *\
+  "Login" Page
+\* --------------------------------------------- */
+
+/* Wrapper */
+#lslf__v_login {
+}
+
+/* Form */
+#lslf__form_login {
+}
+
+/* Username Input - Field */
+#lslf__field_user-name {
+}
+
+/* Username Input - Label */
+#lslf__field_user-name_label {
+}
+
+/* Password Input - Field */
+#lslf__field_password {
+}
+
+/* Password Input - Label */
+#lslf__field_password_label {
+}
+
+/* Sign-In Button */
+#lslf__btn_sign-in {
+}
+
+/* Sign-In Button Text Label */
+#lslf__btn_sign-in_label {
+}
+
+/* Forgot Password Link */
+#lslf__login_btn_forgot-password {
+}
+
+/* Forgot Password Link Label */
+#lslf__login_btn_forgot-password_label {
+}
+
+/* Need Help Link */
+#lslf__login_btn_need-help {
+}
+
+/* Need Help Link Label */
+#lslf__login_btn_need-help_label {
+}
+
+/* --------------------------------------------- *\
+  "Forgot Password" Page
+\* --------------------------------------------- */
+
+/* Wrapper */
+#lslf__v_forgot-password {
+}
+
+/* Form */
+#lslf__form_forgot-password {
+}
+
+/* Message */
+#lslf__forgot-password_msg {
+}
+
+/* Email Input - Field */
+#lslf__field_email {
+}
+
+/* Email Input - Label */
+#lslf__field_email_label {
+}
+
+/* Submit Button */
+#lslf__btn_submit-forgot-password {
+}
+
+/* Submit Button Text Label */
+#lslf__btn_lslf__btn_submit-forgot-password_label {
+}
+
+/* Return to Sign-In Link */
+#lslf__forgot-password_btn_back {
+}
+
+/* Return to Sign-In Link Label */
+#lslf__forgot-password_btn_back_label {
+}
+
+/* Need Help Link */
+#lslf__forgot-password_btn_need-help {
+}
+
+/* Need Help Link Label */
+#lslf__forgot-password_btn_need-help_label {
+}
+
+/* --------------------------------------------- *\
+  "Need Help" Page
+\* --------------------------------------------- */
+
+/* Wrapper */
+#lslf__v_need-help {
+}
+
+/* Custom Headline */
+#lslf__need-help_headline {
+}
+
+/* Custom Message */
+#lslf__need-help_message {
+}
+
+/* Return to Sign-In Link */
+#lslf__need-help_btn_back {
+}
+
+/* Return to Sign-In Link Label */
+#lslf__need-help_btn_back_label {
+}
+
+/* Custom CTA Button */
+#lslf__need-help_btn_custom-cta {
+}
+
+/* Custom CTA Button Text Label */
+#lslf__need-help_btn_custom-cta_label {
+}
