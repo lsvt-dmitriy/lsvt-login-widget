@@ -4,15 +4,11 @@
 
 :root {
     /* --------------------------------------------- *\
-    Widget
+    "Login" Page
     \* --------------------------------------------- */
 
     /* Error Message */
-    --lslf__error_message: "Username or Password are not recognized. Please try again or contact support at 1-800-439-5788.*";
-
-    /* --------------------------------------------- *\
-    "Login" Page
-    \* --------------------------------------------- */
+    --lslf__login_error_message: "Username or Password are not recognized. Please try again or contact support at 1-800-439-5788.*";
 
     /* Username Input - Label */
     --lslf__field_user-name_label: "Username*";
@@ -34,7 +30,11 @@
     \* --------------------------------------------- */
 
     /* Message */
-    --lslf__forgot-password_msg: "No worries, we all forget passwords sometimes. Enter your email address below and we'll send instructions on how to reset it*";
+    --lslf__forgot-password_message: "No worries, we all forget passwords sometimes. Enter your email address below and we'll send instructions on how to reset it*";
+
+    /* Error Message */
+    /* NOTE: this is not intended to be controlled via CSS variables */
+    /* --lslf__forgot-password_error_message: "Some Error Text updated dynamically*"; */
 
     /* Password Sent Confirmation Message */
     --lslf__succsess_message: "Password Reset request has been sent. Check your email soon.*";

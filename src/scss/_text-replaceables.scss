@@ -3,17 +3,13 @@
 \* ============================================= */
 
 /* --------------------------------------------- *\
-  Widget
+  "Login" Page
 \* --------------------------------------------- */
 
 /* Error Message */
-#lslf__error_message::after {
-    content: var(--lslf__error_message, attr(data-content));
+#lslf__login_error_message::after {
+    content: var(--lslf__login_error_message, attr(data-content));
 }
-
-/* --------------------------------------------- *\
-  "Login" Page
-\* --------------------------------------------- */
 
 /* Username Input - Label */
 #lslf__field_user-name_label::after {
@@ -45,9 +41,15 @@
 \* --------------------------------------------- */
 
 /* Message */
-#lslf__forgot-password_msg::after {
-    content: var(--lslf__forgot-password_msg, attr(data-content));
+#lslf__forgot-password_message::after {
+    content: var(--lslf__forgot-password_message, attr(data-content));
 }
+
+/* Error Message */
+// NOTE: this is not intended to be controlled by via CSS variables
+// #lslf__forgot-password_error_message::after {
+//     content: var(--lslf__forgot-password_error_message, attr(data-content));
+// }
 
 /* Password Sent Confirmation Message */
 #lslf__success_message::after {

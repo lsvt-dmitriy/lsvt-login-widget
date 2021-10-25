@@ -20,12 +20,6 @@
         }
     }
 
-    form:not(.error) {
-        .alert.alert-danger {
-            display: none;
-        }
-    }
-
     .password-toggle {
         cursor: pointer;
     }

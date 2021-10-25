@@ -10,7 +10,17 @@
         >
         <!-- Add class "error" above to display the error message -->
 
-            <% include ./partials/alert-error.ejs %>
+            <div class="alert alert-danger w-100 mb-4">
+                <span class="message">
+                    <i class="icon-utils-warning"></i>
+                    <spam 
+                        id="lslf__login_error_message"
+                        class="label"
+                        data-content="Username or Password are not recognized. Please try again or contact support at 1-800-439-5788."
+                    >
+                </span>
+            </div>
+        
             <div class="form__group in-field-icon in-field-icon--prepend">
                 <input
                     type="text"

@@ -10,10 +10,6 @@
 #lslf__login-widget {
 }
 
-/* Error Message */
-#lslf__error_message {
-}
-
 /* --------------------------------------------- *\
   "Login" Page
 \* --------------------------------------------- */
@@ -24,6 +20,10 @@
 
 /* Form */
 #lslf__form_login {
+}
+
+/* Error Message */
+#lslf__login_error_message {
 }
 
 /* Username Input - Field */
@@ -76,6 +76,10 @@
 
 /* Form */
 #lslf__form_forgot-password {
+}
+
+/* Error Message */
+#lslf__error_message_fpw {
 }
 
 /* Message */

@@ -105,6 +105,12 @@ hr {
     }
 }
 
+form:not(.error) {
+    .alert.alert-danger {
+        display: none;
+    }
+}
+
 a {
     font-weight: bold;
     color: var(--lslf_color_black, $black);
