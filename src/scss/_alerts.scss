@@ -3,9 +3,7 @@
 \* --------------------------------------------- */
 
 .alert {
-    .message {
-        line-height: 1.25em;
-        display: flex;
-        flex-direction: row;
-    }
+    line-height: 1.25em;
+    display: flex;
+    flex-direction: row;
 }
