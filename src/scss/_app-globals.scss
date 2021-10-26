@@ -114,4 +114,10 @@ form:not(.error) {
 a {
     font-weight: bold;
     color: var(--system-black, $black);
+    &.link-button,
+    &.link-button:visited,
+    &.link-button:hover {
+        border-radius: $radius;
+        text-decoration: none;
+    }
 }
