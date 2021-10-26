@@ -3,16 +3,13 @@
 \* --------------------------------------------- */
 
 :root {
-    --lslf_color_white: #fff;
-    --lslf_color_black: #000;
-    --lslf_color_primary: #12355a;
-    --lslf_color_default: #899aac;
-    --lslf_color_gray: #8c8c8c;
-    --lslf_color_success: #8bc34a;
-    --lslf_color_danger: #d22814;
-    --lslf_color_info: #03a9f4;
-    --lslf_color_gray-light: #f9f9f9;
-    --lslf_color_gray-350: #dfdfdf;
-    --lslf_color_gray-400: #c5c5c5;
-    --lslf_color_blue-light: #f3fafe;
+    --white: #fff;
+    --system-black: #000;
+    --primary: #12355a;
+    --default: #899aac;
+    --gray: #8c8c8c;
+    --success: #8bc34a;
+    --danger: #d22814;
+    --light: #f9f9f9;
+    --gray-400: #c5c5c5;
 }

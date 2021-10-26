@@ -7,23 +7,23 @@
 }
 
 .text-primary {
-    color: var(--lslf_color_primary, $primary);
+    color: var(--primary, $primary);
 }
 
 .text-success {
-    color: var(--lslf_color_success, $success);
+    color: var(--success, $success);
 }
 
 .text-danger {
-    color: var(--lslf_color_danger, $danger);
+    color: var(--danger, $danger);
 }
 
 .text-system-black {
-    color: var(--lslf_color_black, $black);
+    color: var(--system-black, $black);
 }
 
 .bg-white {
-    background: var(--lslf_color_white, $white);
+    background: var(--white, $white);
 }
 
 .m-0 {
