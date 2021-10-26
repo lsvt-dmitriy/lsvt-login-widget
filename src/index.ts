@@ -1,7 +1,7 @@
 import "./css/cleanslate.css";
 import "./scss/styles.scss";
-import "./css/colors.css";
-import "./css/custom.css";
+// import "./css/colors.css";
+// import "./css/custom.css";
 import "./css/text-content.css";
 
 import SlideNavigation from "./ts/slide-navigation";
