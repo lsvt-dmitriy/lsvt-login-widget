@@ -2,9 +2,71 @@
     Forms
 \* --------------------------------------------- */
 
+@mixin label-on-top-border {
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-flex;
+    line-height: 0.9375em;
+    margin-bottom: 10px;
+    width: 100%;
+    max-height: 100%;
+    font-weight: 400;
+    font-size: 0.75rem;
+    box-sizing: border-box;
+    line-height: 1em;
+    color: var(--lslf_color_default, $default);
+
+    &:before {
+        margin-right: 0.25rem;
+        border-left: solid 1px transparent;
+        border-radius: 0.25rem 0;
+    }
+
+    &:after {
+        flex-grow: 1;
+        margin-left: 0.25rem;
+        border-right: solid 1px transparent;
+        border-radius: 0 0.25rem;
+    }
+
+    &:before,
+    &:after {
+        display: block;
+        min-width: 0.625rem;
+        height: 0.5rem;
+        margin-top: 0.375rem;
+        pointer-events: none;
+        content: "";
+        border-top: solid 1px;
+        border-top-color: $gray-400;
+    }
+}
+
+@mixin field-with-no-top-border {
+    &:focus {
+        border-color: var(--lslf_color_black, $black);
+        border-top-color: rgba(0, 0, 0, 0);
+        & + .form__label {
+            color: var(--lslf_color_black, $black);
+            &:before,
+            &:after {
+                border-color: var(--lslf_color_black, $black);
+            }
+            & + i {
+                color: var(--lslf_color_black, $black);
+                & + span > i {
+                    color: var(--lslf_color_black, $black);
+                }
+            }
+        }
+    }
+    border-top-color: rgba(0, 0, 0, 0);
+}
+
 .form__group {
     $field-padding: 1em;
-
     position: relative;
     display: block;
     padding-top: 0.375rem;
@@ -13,6 +75,7 @@
 
     input,
     input[type="text"],
+    input[type="tel"],
     input[type="password"],
     input[type="email"] {
         border-radius: $radius;
@@ -20,15 +83,45 @@
         box-sizing: border-box;
         font-size: 0.9em;
         padding: 0.75em 0.875em;
-        &::placeholder {
-            letter-spacing: 0.02em;
-            opacity: 0.7;
-        }
         width: 100%;
         background-color: $white;
         transition: border 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+
+        // NOTE: need this to get indication of content in the field
+        &::placeholder {
+            visibility: hidden;
+        }
     }
 
+    &:not(.form__group--active) {
+        input {
+            &:not(:placeholder-shown) {
+                @include field-with-no-top-border();
+
+                & ~ label {
+                    @include label-on-top-border();
+                }
+            }
+        }
+    }
+
+    // Fancy label (position: inside the field)
+    .form__label {
+        position: absolute;
+        left: 2.5em;
+        top: 1em;
+        z-index: 1;
+        color: var(--lslf_color_default, $default);
+        white-space: nowrap;
+
+        &:after {
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+    }
+
+    // Hide label, restore input top border
+    // if the hidden-label class present at form-group
     &.form__group--hidden-label {
         input {
             border-top: solid 1px;
@@ -39,85 +132,19 @@
         }
     }
 
-    .form__label {
-        position: absolute;
-        left: 2.5em;
-        top: 1em;
-        z-index: 1;
-        color: var(--lslf_color_default, $default);
-        white-space: nowrap;
-        &:before,
-        &:after {
-            transition: border-color 0.2s, box-shadow 0.2s;
-        }
-        transition: color 0.2s, font-size 0.2s, line-height 0.2s;
-    }
-
     &.form__group--active {
         input,
         input[type="text"],
+        input[type="tel"],
         input[type="password"],
         input[type="email"] {
-            &:focus {
-                border-color: var(--lslf_color_black, $black);
-                border-top-color: rgba(0, 0, 0, 0);
-                & + .form__label {
-                    color: var(--lslf_color_black, $black);
-                    &:before,
-                    &:after {
-                        border-color: var(--lslf_color_black, $black);
-                    }
-                    & + i {
-                        color: var(--lslf_color_black, $black);
-                        & + span > i {
-                            color: var(--lslf_color_black, $black);
-                        }
-                    }
-                }
-            }
-            border-top-color: rgba(0, 0, 0, 0);
+            @include field-with-no-top-border();
         }
 
+        // Fancy label — once it's group marked "active",
+        // the label moves to to the top border of the field
         .form__label {
-            left: 0;
-            top: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: inline-flex;
-            line-height: 0.9375em;
-            margin-bottom: 10px;
-            width: 100%;
-            max-height: 100%;
-            font-weight: 400;
-            font-size: 0.75rem;
-            box-sizing: border-box;
-            line-height: 1em;
-            color: var(--lslf_color_default, $default);
-
-            &:before {
-                margin-right: 0.25rem;
-                border-left: solid 1px transparent;
-                border-radius: 0.25rem 0;
-            }
-
-            &:after {
-                flex-grow: 1;
-                margin-left: 0.25rem;
-                border-right: solid 1px transparent;
-                border-radius: 0 0.25rem;
-            }
-
-            &:before,
-            &:after {
-                display: block;
-                min-width: 0.625rem;
-                height: 0.5rem;
-                margin-top: 0.375rem;
-                pointer-events: none;
-                content: "";
-                border-top: solid 1px;
-                border-top-color: $gray-400;
-            }
+            @include label-on-top-border();
         }
     }
 
