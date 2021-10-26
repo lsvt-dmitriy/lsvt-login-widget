@@ -4,14 +4,26 @@
 
 :root {
     /* no important */
+
+    /* Buttons color */
     --primary-color: #12355a;
+
+    /* Button text color */
     --primary-color-accent: #ffffff;
+
+    /* Widget background color */
     --white: #fff;
+
+    /* Footer background */
+    --light: #f9f9f9;
+
+    /* Black text color */
     --system-black: #000;
-    --default: #899aac;
-    --gray: #8c8c8c;
+
+    /* Success and Danger colors */
     --success: #8bc34a;
     --danger: #d22814;
-    --light: #f9f9f9;
-    --gray-400: #c5c5c5;
+
+    /* Fields borders */
+    --default: #899aac;
 }
