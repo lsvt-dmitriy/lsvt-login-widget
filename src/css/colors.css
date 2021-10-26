@@ -3,9 +3,11 @@
 \* --------------------------------------------- */
 
 :root {
+    /* no important */
+    --primary-color: #12355a;
+    --primary-color-accent: #ffffff;
     --white: #fff;
     --system-black: #000;
-    --primary: #12355a;
     --default: #899aac;
     --gray: #8c8c8c;
     --success: #8bc34a;

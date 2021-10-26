@@ -24,9 +24,9 @@
         height: 64px;
         margin: 8px;
         border-radius: 50%;
-        border: 6px solid var(--primary, $primary);
-        border-color: var(--primary, $primary) transparent
-            var(--primary, $primary) transparent;
+        border: 6px solid var(--primary-color, $primary-color);
+        border-color: var(--primary-color, $primary-color) transparent
+            var(--primary-color, $primary-color) transparent;
         animation: lds-dual-ring 1.2s linear infinite;
     }
     @keyframes lds-dual-ring {

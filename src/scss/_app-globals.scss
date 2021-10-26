@@ -17,7 +17,7 @@ small {
 
 %headings {
     font-family: "Montserrat", sans-serif;
-    color: var(--primary, $primary);
+    color: var(--primary-color, $primary-color);
 }
 
 .btn {
@@ -48,19 +48,12 @@ small {
 }
 
 .btn-primary {
-    color: var(--white, $white);
-    background: var(--primary, $primary);
-    border-color: var(--primary, $primary);
+    color: var(--primary-color-accent, $primary-color-accent);
+    background: var(--primary-color, $primary-color);
+    border-color: var(--primary-color, $primary-color);
     &:hover {
         opacity: 0.95;
     }
-}
-
-.btn-grey {
-    @extend .btn-primary;
-    color: var(--primary, $primary);
-    background: var(--light, $light);
-    border-color: var(--light, $light);
 }
 
 *,
