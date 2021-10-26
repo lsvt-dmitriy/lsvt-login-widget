@@ -33,19 +33,6 @@
                 }
             }
         }
-
-        button.btn-grey {
-            padding: 0.75em;
-            small {
-                display: block;
-                margin-bottom: 0.5em;
-                font-weight: normal;
-            }
-            .label::after {
-                text-transform: uppercase;
-            }
-            margin-top: 1em;
-        }
     }
 
     //## Footer
