@@ -1,21 +1,17 @@
-/* --------------------------------------------- *\
-    Globals
-\* --------------------------------------------- */
+// Globals
 
 @import "_fonts";
 
-/* --------------------------------------------- *\
-    SCSS Variables and Mixins
-\* --------------------------------------------- */
+// SCSS Variables and Mixins
 
 @import "_colors-scss-vars";
 @import "_vars-and-mixins";
 
-/* --------------------------------------------- *\
-    Namespaced styles 
-\* --------------------------------------------- */
+//    Namespaced styles
 
-/* Namespace: "lslf" (LightSpeed Login Form) */
+/* 
+    Namespace: "lslf" (LightSpeed Login Form) 
+*/
 
 #lslf__login-widget {
     @import "_app-globals";
